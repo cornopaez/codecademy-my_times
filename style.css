@@ -51,7 +51,6 @@ header {
 .content, 
 .content .column {
 	display: flex;
-	flex-direction: column;
 }
 
 .content {
@@ -60,13 +59,24 @@ header {
 
 .content .column.large {
 	width: 630px;
+	flex-direction: column;
+}
+
+.content .column .large-bottom {
+	display: flex;
+}
+
+.content .column.large .large-bottom .news {
+	flex-direction: column;
 }
 
 .content .column.medium {
 	width: 300px;
+	flex-direction: column;
 }
 
 .content .column.small {
 	width: 240px;
+	flex-direction: column;
 }
 
